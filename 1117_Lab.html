@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+        }
+
+        td.photo-column {
+            width: 150px; /* Adjust the width as needed */
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/submit_form" method="post">
+        <table>
+            <tr>
+                <td colspan="3" style="text-align: center; font-weight: bold;">About -- 112306071</td>
+            </tr>
+            <tr>
+                <td class="photo-column" rowspan="3">
+                    <!-- Personal Photo -->
+                    <img src="C:\Users\3035m\Pictures\IMG_E6941.JPG" alt="Personal Photo" style="width: 100%; height: auto;">
+                    <p style="text-align: center; font-weight: bold;">Personal Photo</p>
+                </td>
+                <td colspan="2"> <!-- Two columns for Name and Gender -->
+                    <!-- Name -->
+                    Name: <input type="text" value=""><br>
+                    <!-- Gender -->
+                    Gender:
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other"> Other
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1">
+                    County: <select>
+                        <option value="taipei">Taipei</option>
+                        <option value="tainan">Tainan</option>
+                        <option value="taichung">Taichung</option>
+                        <option value="taoyuan">Taoyuan</option>
+                    </select>
+                </td>
+                <td>Birthday: <input type="date"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    E-mail: <input type="email" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>Hobby</td>
+                <td colspan="2">
+                    <!-- Checkbox options for Hobby -->
+                    <input type="checkbox" id="swimming" name="hobby" value="swimming">
+                    <label for="swimming">Swimming</label>
+
+                    <input type="checkbox" id="volleyball" name="hobby" value="volleyball">
+                    <label for="volleyball">Volleyball</label>
+
+                    <input type="checkbox" id="movie" name="hobby" value="movie">
+                    <label for="movie">Movie</label>
+
+                    <input type="checkbox" id="game" name="hobby" value="game">
+                    <label for="game">Game</label>
+
+                    <input type="checkbox" id="sleep" name="hobby" value="sleep">
+                    <label for="sleep">Sleep</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Skill</td>
+                <td colspan="2">
+                    <!-- Checkbox options for Skill -->
+                    <input type="checkbox" id="java" name="skill" value="java">
+                    <label for="java">Java</label>
+
+                    <input type="checkbox" id="html" name="skill" value="html">
+                    <label for="html">HTML</label>
+
+                    <input type="checkbox" id="python" name="skill" value="python">
+                    <label for="python">Python</label>
+
+                    <input type="checkbox" id="office" name="skill" value="office">
+                    <label for="office">Microsoft Office</label>
+
+                    <input type="checkbox" id="premiere" name="skill" value="premiere">
+                    <label for="premiere">Premiere</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Say something</td>
+                <td colspan="2">
+                    <input type="text" placeholder="Say something here"></td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: left;">
+                    <input type="submit" value="提交">
+                    <input type="reset" value="重置">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
